@@ -1,0 +1,21 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bg-img {
+  background: image-url("default.jpg") no-repeat center center fixed;
+/*  background-position: 10% 20%;*/
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 500px;
+  h1 {
+    color: #fff;
+  }
+}
+
+.centered {
+  text-align: center;
+  h2 {
+    font-weight: 400;
+  }
+}

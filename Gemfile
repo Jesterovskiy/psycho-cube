@@ -37,3 +37,9 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor'
+
+gem 'foundation-rails'
+
+gem "haml-rails"
+
+gem 'simple_form'
