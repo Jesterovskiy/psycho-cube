@@ -1,0 +1,58 @@
+<br>
+<div class="row">
+  <div class="large-5 columns">
+    <img src="<%= image_url 'Logo.png'%>">
+  </div>
+  <div class="large-5 columns">
+    <p class='text'>
+      Опишите в полях ниже 6 вещей которые вы бы хотели делать каждый день,
+      сделайте до конца года или даже до конца жизни. Дайте совет себе, напомните себе о чем-то.
+      Или даже провозгласите свой настоящий манифест!
+    </p>
+    <p class='text'>
+      Получите свой мотивирующий кубик, склейте его, поставьте на стол и никогда не забывайте о своих
+      целях, планах и намерениях!
+    </p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="large-5 columns">
+    <img src="<%= image_url 'Cube.png'%>">
+  </div>
+  <div class="large-5 columns">
+    <%= simple_form_for :cube, :url => '/home/generate_cube', defaults: { input_html: { maxlength: 40 }, label: false } do |f| %>
+      <%= f.input :field1, placeholder: 'Хочу бегать по утрам каждый день!' %>
+      <%= f.input :field2, placeholder: 'Хочу прыгнуть с парашютом!' %>
+      <%= f.input :field3, placeholder: 'Хочу никогда не переставать учиться!' %>
+      <%= f.input :field4, placeholder: 'Не забывай сортировать мусор!' %>
+      <%= f.input :field5, placeholder: 'Всегда люби людей!' %>
+      <%= f.input :field6, placeholder: 'Просто улыбнись прямо сейчас :)' %>
+      <%= f.button :submit, "Get my motivation cube!" %>
+    <% end %>
+  </div>
+</div>
+<br>
+<div class="row footer">
+  <div class="large-3 columns">
+    <img src="<%= image_url 'Zelenska.png'%>">
+  </div>
+  <div class="large-4 columns">
+    <p class='text'>
+      Привет!
+      Меня зовут Ольга Зеленская, я из Украины, и Мотивирующай Кубик - это мой проект
+      по психологии первого года обучения в School of Form. Я несколько лет работала дизайнером-фрилпнсером
+      и знаю как тяжело иногда бывает сделать зарядку или выделить время на урок по английскому
+    </p>
+  </div>
+  <div class="large-5 columns">
+    <p class='text'>
+      Этот Кубик не решит за вас этих проблем, но может в нужный момент оказаться перед глазами и напомнить
+      о чем-то важном.
+    </p>
+    <p class='text'>
+      Если вы хотите прислать мне фото своего кубика, рассказать свою историю или если вдруг воспользовалиь
+      этим проектом и он помог вам - пишите мне на olyzel@gmail.com, я буду очень рада
+    </p>
+  </div>
+</div>

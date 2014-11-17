@@ -19,3 +19,29 @@
     font-weight: 400;
   }
 }
+.logo {
+    background: url(../images/Logo.png);
+    bottom: 2931px;
+    height: 268px;
+    left: 289px;
+    right: 1990px;
+    top: 134px;
+    width: 1056px;
+}
+
+.text {
+  color: #626366;
+}
+
+.footer {
+  background-color: #d9d9d9;
+
+  img {
+    width: 40%;
+    float: right;
+  }
+
+  div {
+    margin-top: 5%;
+  }
+}
