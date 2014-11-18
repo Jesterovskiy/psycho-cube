@@ -5,8 +5,11 @@ class HomeController < ApplicationController
   end
 
   def generate_cube
-    Prawn::Document.generate("hello.pdf") do
-      text "Hello World!"
+    name = 'public/Cube_' + SecureRandom.hex(4).to_s + '.pdf'
+    path = view_context.image_path('Cube_pattern.jpg')
+    Prawn::Document.generate(name) do
+      image path
     end
+    send_file Rails.root.join(name)
   end
 end
