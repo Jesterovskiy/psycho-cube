@@ -5,13 +5,10 @@
   </div>
   <div class="large-5 columns">
     <p class='text'>
-      Опишите в полях ниже 6 вещей которые вы бы хотели делать каждый день,
-      сделайте до конца года или даже до конца жизни. Дайте совет себе, напомните себе о чем-то.
-      Или даже провозгласите свой настоящий манифест!
+      Fill out the fields below describing 6 things that you would like to do every day, will do by the end of this year or in your lifetime (please, not more than 60 symb.). Give yourself some advice or a reminder. Or even proclaim a manifesto!
     </p>
     <p class='text'>
-      Получите свой мотивирующий кубик, склейте его, поставьте на стол и никогда не забывайте о своих
-      целях, планах и намерениях!
+      Generate your motivation cube, assemble it, place it on your desk and never forget your goals, plans and intentions!
     </p>
   </div>
 </div>
@@ -21,13 +18,13 @@
     <img src="<%= image_url 'Cube.jpg'%>">
   </div>
   <div class="large-5 columns">
-    <%= simple_form_for :cube, :url => '/home/generate_cube', defaults: { input_html: { maxlength: 40 }, label: false } do |f| %>
-      <%= f.input :field1, placeholder: 'Хочу бегать по утрам каждый день!' %>
-      <%= f.input :field2, placeholder: 'Хочу прыгнуть с парашютом!' %>
-      <%= f.input :field3, placeholder: 'Хочу никогда не переставать учиться!' %>
-      <%= f.input :field4, placeholder: 'Не забывай сортировать мусор!' %>
-      <%= f.input :field5, placeholder: 'Всегда люби людей!' %>
-      <%= f.input :field6, placeholder: 'Просто улыбнись прямо сейчас :)' %>
+    <%= simple_form_for :cube, :url => '/home/generate_cube', defaults: { input_html: { maxlength: 60 }, label: false } do |f| %>
+      <%= f.input :field1, placeholder: 'I would like to go jogging every day' %>
+      <%= f.input :field2, placeholder: 'I want to do a parachute jump' %>
+      <%= f.input :field3, placeholder: 'I want to never stop learning' %>
+      <%= f.input :field4, placeholder: 'Don’t forget to sort your recyclable waste' %>
+      <%= f.input :field5, placeholder: 'Always love people' %>
+      <%= f.input :field6, placeholder: 'Just smile right now :)' %>
       <%= f.button :submit, "Get my motivation cube!" %>
     <% end %>
   </div>
@@ -39,20 +36,16 @@
   </div>
   <div class="large-4 columns">
     <p class='text'>
-      Привет!
-      Меня зовут Ольга Зеленская, я из Украины, и Мотивирующай Кубик - это мой проект
-      по психологии первого года обучения в School of Form. Я несколько лет работала дизайнером-фрилпнсером
-      и знаю как тяжело иногда бывает сделать зарядку или выделить время на урок по английскому
+      Hello!
+      My name is Olga Zelenska, I am from Ukraine. I am a first year student at School of Form and Motivation Cube is my psychology project. I worked as a freelance designer for a few years and I know how difficult it can be to find motivation for sport or an English lesson.
     </p>
   </div>
   <div class="large-5 columns left">
     <p class='text'>
-      Этот Кубик не решит за вас этих проблем, но может в нужный момент оказаться перед глазами и напомнить
-      о чем-то важном.
+      This Cube will not solve these problems for you, but it can capture your attention at the right moment and remind you of something important.
     </p>
     <p class='text'>
-      Если вы хотите прислать мне фото своего кубика, рассказать свою историю или если вдруг воспользовалиь
-      этим проектом и он помог вам - пишите мне на olyzel@gmail.com, я буду очень рада
+      If you wish to send me a photo of your cube, tell your story or share your experience in case you used this cube and found it helpful – write to <%= mail_to 'olyzel@gmail.com' %>, I would be happy to receive feedback.
     </p>
   </div>
 </div>
